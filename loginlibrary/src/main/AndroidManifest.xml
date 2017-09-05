@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.loginlibrary">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".activitys.RegisterActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/LoginTheme">
+        </activity>
+        <activity
+            android:name=".activitys.LoginActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/LoginTheme">
+        </activity>
+        <activity
+            android:name=".activitys.LoginResgistActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/LoginTheme">
+        </activity>
+        <activity
+            android:name=".activitys.RegistPassWordActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/LoginTheme">
+        </activity>
+    </application>
+
+</manifest>

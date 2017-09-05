@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#55cccccc"
+    tools:context="com.example.administrator.projecttest.activity.AddressManagerActivity">
+
+    <RelativeLayout
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize">
+
+
+        <RelativeLayout
+            android:id="@+id/id_back_iv"
+            android:layout_width="50dp"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+
+                android:layout_width="13dp"
+                android:layout_height="21dp"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/back"
+                android:layout_marginTop="16.5dp"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center"
+            android:text="管理地址"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/id_toolbar"
+        android:id="@+id/id_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_bottom"
+        android:background="#55cccccc"></android.support.v7.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/id_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/add_address"
+            android:layout_width="179dp"
+            android:layout_height="38dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/add_address">
+            
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/add2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="31dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#f53b37"
+                android:text="添加新地址"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_add"/>
+            
+            
+            
+            
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

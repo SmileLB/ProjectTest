@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义ViewPagerIndicator  -->
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="numbers" format="integer"/>
+        <attr name="foreColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="gapWidth" format="float"/>
+    </declare-styleable>
+</resources>
